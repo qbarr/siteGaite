@@ -1,0 +1,178 @@
+html { font-size: 100%; overflow: hidden; } 
+
+body {
+	margin:0;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+}
+
+/*p {
+	position: absolute;
+	left:18%;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 7rem;
+	line-height: 22px;
+	align-items: center;
+	text-align: center;
+
+	color: #FFFFFF;
+
+
+}
+*/
+
+.modal{
+	position: absolute;
+	text-align: center;
+	width: 25vw;
+	margin-left: 34.5vw;
+	background: #111;
+	color: #fff;
+	padding: 2vw;
+	bottom: 0;
+	border-top-left-radius: 100vw;
+	border-top-right-radius: 100vw;
+	border: 3px solid #7A7A7A;
+	opacity: 0;
+	pointer-events: none;
+  }
+  
+  .modal img{
+	width: 25vw;
+	height: 25vw;
+	-webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  }
+  
+  .modal h1{
+	margin: -5vw 0 5px 0;
+	font-size: 3em;
+  }
+  
+  .modal p{
+	margin: 3vw 0;
+	font-weight: 100;
+  }
+  
+  a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.2em;
+  }
+  
+  a div{
+	width: 40px;
+	height: 40px;
+	background:#1C1B1B;
+	border-radius: 100%;
+	margin: auto;
+  }
+  
+  a div:first-child{
+	margin-top: -30px;
+	background:#1C1B1B;
+  }
+  
+  a div:last-child{
+	background: none;
+	margin-top: -50px;
+	padding: 10px;
+	border: 1px solid #7a7a7a;
+	transform: rotate(0deg);
+  }
+  
+  a:hover div:last-child{
+	border-right: 1px solid #111;
+	border-left: 1px solid #111;
+	animation-name: rotate;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+  }
+  
+  @keyframes rotate {
+	0%   {transform: rotate(0deg);}
+	100% {
+	  transform: rotate(360deg);
+	  border: 1px solid #7A7A7A;
+	}
+  }
+
+button {
+	left: 10vw;
+	bottom:10vh;
+	position: absolute;
+	color:white;
+	width: 2vw;
+	height: 2vw;
+}
+
+.rond {
+	width:7vw;
+	position: absolute;
+	transition : opacity 0.3s;
+	opacity: 0;
+	cursor:pointer;
+	pointer-events: none;
+}
+iframe {
+	width:70vw;
+	height: 70vh;
+	position: absolute;
+}
+
+.jeu {
+	position: absolute;
+	top:15vh;
+	left: 15vw;
+	display:none;
+}
+
+.rectangle { /* attention le div dans le popup est modifié avec .popup div */
+	position: absolute;
+	width: 17vw;
+	height: 7.5vh;
+	top:3vh;
+	right:1vw;
+
+	border: 2px solid #FFFFFF;
+	box-sizing: border-box;
+	border-radius: 70px;
+}
+
+
+.rectangle:hover {
+	cursor:pointer;
+}
+
+#precedent {
+	right:0;
+	left:2vw;
+}
+
+.popup {
+	position: absolute;
+	bottom:0;
+	left:37vw;
+	display: flex;
+	pointer-events: none;
+	opacity: 0;
+	transition : opacity 0.2s;
+}
+
+.popup img {
+	width: 25vw;
+	height:auto;
+}
+
+.popup div {
+	width: 80%;
+	height: 15%;
+	top:75%;
+	right:10%;
+}
+
+
+
+
