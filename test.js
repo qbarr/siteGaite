@@ -430,7 +430,7 @@ function load() {
 
  
 
-loader.load( 'models/boussolev2.1.glb', function ( glb ) {
+loader.load( 'models/boussolev3.1.glb', function ( glb ) {
 	//LANCER SON 
 	/*tabSound.forEach(sound => {
 		sound.play();
